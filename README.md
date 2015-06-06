@@ -60,12 +60,14 @@ Testing code developed with the **ActiveRecord** pattern. Does the use of the Ac
 
 ``` php
 <?php
-class UserService {
+class UserService
+{
     function createUserByName($name)
+    {
     	$user = new User;
     	$user->setName($name);
     	$user->save();
-	}
+    }
 }
 ?>
 ```
